@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import CalendlyButton from "./CalendlyButton";
 
 const tiers = [
   {
@@ -198,8 +199,7 @@ export default function Pricing() {
                 </ul>
 
                 {/* CTA */}
-                <a
-                  href="#contact"
+                <CalendlyButton
                   className={`w-full py-3.5 text-center font-heading font-bold text-sm uppercase tracking-widest rounded-sm transition-all duration-200 cursor-pointer ${
                     tier.highlight
                       ? "bg-[#CCFF00] text-black hover:bg-[#BFFF00] shadow-[0_0_20px_rgba(204,255,0,0.3)] hover:shadow-[0_0_40px_rgba(204,255,0,0.5)]"
@@ -207,7 +207,7 @@ export default function Pricing() {
                   }`}
                 >
                   {tier.cta}
-                </a>
+                </CalendlyButton>
               </div>
             </div>
           ))}

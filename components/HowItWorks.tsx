@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import CalendlyButton from "./CalendlyButton";
 
 const steps = [
   {
@@ -124,15 +125,12 @@ export default function HowItWorks() {
 
         {/* CTA */}
         <div className="animate-on-scroll text-center mt-20">
-          <a
-            href="#pricing"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-[#CCFF00] text-black font-heading font-black text-sm uppercase tracking-widest rounded-sm hover:bg-[#BFFF00] transition-all duration-200 cursor-pointer shadow-[0_0_30px_rgba(204,255,0,0.2)] hover:shadow-[0_0_50px_rgba(204,255,0,0.4)]"
-          >
+          <CalendlyButton className="inline-flex items-center gap-2 px-8 py-4 bg-[#CCFF00] text-black font-heading font-black text-sm uppercase tracking-widest rounded-sm hover:bg-[#BFFF00] transition-all duration-200 cursor-pointer shadow-[0_0_30px_rgba(204,255,0,0.2)] hover:shadow-[0_0_50px_rgba(204,255,0,0.4)]">
             Start in 10 Minutes
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
-          </a>
+          </CalendlyButton>
         </div>
       </div>
     </section>
