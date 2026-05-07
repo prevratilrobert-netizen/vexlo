@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import CalendlyButton from "./CalendlyButton";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -68,12 +69,9 @@ export default function Navbar() {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <a
-              href="#pricing"
-              className="inline-flex items-center px-5 py-2.5 bg-[#CCFF00] text-black text-sm font-heading font-bold rounded-sm hover:bg-[#BFFF00] transition-all duration-200 cursor-pointer tracking-wide uppercase"
-            >
+            <CalendlyButton className="inline-flex items-center px-5 py-2.5 bg-[#CCFF00] text-black text-sm font-heading font-bold rounded-sm hover:bg-[#BFFF00] transition-all duration-200 cursor-pointer tracking-wide uppercase">
               Book Demo
-            </a>
+            </CalendlyButton>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -101,13 +99,11 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
-            <a
-              href="#pricing"
+            <CalendlyButton
               className="inline-flex items-center justify-center px-5 py-3 bg-[#CCFF00] text-black text-sm font-heading font-bold rounded-sm hover:bg-[#BFFF00] transition-all cursor-pointer uppercase tracking-wide mt-2"
-              onClick={() => setMobileOpen(false)}
             >
               Book Demo
-            </a>
+            </CalendlyButton>
           </div>
         </div>
       )}

@@ -20,6 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async />
+      </head>
       <body className="bg-vex-black text-vex-white font-body antialiased">
         {children}
       </body>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import CalendlyButton from "./CalendlyButton";
 
 export default function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -117,12 +118,9 @@ export default function Hero() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
           </a>
-          <a
-            href="#how-it-works"
-            className="inline-flex items-center gap-2 px-8 py-4 border border-white/20 text-white font-heading font-bold text-sm uppercase tracking-widest rounded-sm hover:border-white/50 hover:bg-white/5 transition-all duration-200 cursor-pointer"
-          >
+          <CalendlyButton className="inline-flex items-center gap-2 px-8 py-4 border border-white/20 text-white font-heading font-bold text-sm uppercase tracking-widest rounded-sm hover:border-white/50 hover:bg-white/5 transition-all duration-200 cursor-pointer">
             Book a Demo
-          </a>
+          </CalendlyButton>
         </div>
 
         {/* Trust line */}

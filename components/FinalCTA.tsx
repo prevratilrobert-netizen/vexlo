@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import CalendlyButton from "./CalendlyButton";
 
 export default function FinalCTA() {
   const ref = useRef<HTMLDivElement>(null);
@@ -86,10 +87,7 @@ export default function FinalCTA() {
 
           {/* CTA */}
           <div className="animate-on-scroll flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-            <a
-              href="#pricing"
-              className="group inline-flex items-center gap-3 px-10 py-5 bg-[#CCFF00] text-black font-heading font-black text-base uppercase tracking-widest rounded-sm hover:bg-[#BFFF00] transition-all duration-200 cursor-pointer shadow-[0_0_40px_rgba(204,255,0,0.35)] hover:shadow-[0_0_60px_rgba(204,255,0,0.6)]"
-            >
+            <CalendlyButton className="group inline-flex items-center gap-3 px-10 py-5 bg-[#CCFF00] text-black font-heading font-black text-base uppercase tracking-widest rounded-sm hover:bg-[#BFFF00] transition-all duration-200 cursor-pointer shadow-[0_0_40px_rgba(204,255,0,0.35)] hover:shadow-[0_0_60px_rgba(204,255,0,0.6)]">
               Book Your Demo Today
               <svg
                 className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200"
@@ -100,7 +98,7 @@ export default function FinalCTA() {
               >
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
-            </a>
+            </CalendlyButton>
             <a
               href="#pricing"
               className="inline-flex items-center gap-2 px-8 py-5 border border-white/15 text-white font-heading font-bold text-sm uppercase tracking-widest rounded-sm hover:border-white/30 hover:bg-white/4 transition-all duration-200 cursor-pointer"
