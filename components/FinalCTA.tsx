@@ -99,9 +99,12 @@ export default function FinalCTA() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
             </CalendlyButton>
-            <CalendlyButton className="inline-flex items-center gap-2 px-8 py-5 border border-white/15 text-white font-heading font-bold text-sm uppercase tracking-widest rounded-sm hover:border-white/30 hover:bg-white/4 transition-all duration-200 cursor-pointer">
+            <a
+              href="#pricing"
+              className="inline-flex items-center gap-2 px-8 py-5 border border-white/15 text-white font-heading font-bold text-sm uppercase tracking-widest rounded-sm hover:border-white/30 hover:bg-white/4 transition-all duration-200 cursor-pointer"
+            >
               See Pricing
-            </CalendlyButton>
+            </a>
           </div>
 
           {/* Trust indicators */}

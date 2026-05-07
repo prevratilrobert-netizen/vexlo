@@ -103,7 +103,10 @@ export default function Hero() {
           className="animate-on-scroll flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
           style={{ transitionDelay: "300ms" }}
         >
-          <CalendlyButton className="group inline-flex items-center gap-2 px-8 py-4 bg-[#CCFF00] text-black font-heading font-black text-sm uppercase tracking-widest rounded-sm hover:bg-[#BFFF00] transition-all duration-200 cursor-pointer shadow-[0_0_30px_rgba(204,255,0,0.3)] hover:shadow-[0_0_50px_rgba(204,255,0,0.5)]">
+          <a
+            href="#pricing"
+            className="group inline-flex items-center gap-2 px-8 py-4 bg-[#CCFF00] text-black font-heading font-black text-sm uppercase tracking-widest rounded-sm hover:bg-[#BFFF00] transition-all duration-200 cursor-pointer shadow-[0_0_30px_rgba(204,255,0,0.3)] hover:shadow-[0_0_50px_rgba(204,255,0,0.5)]"
+          >
             Get Started for $97/mo
             <svg
               className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200"
@@ -114,7 +117,7 @@ export default function Hero() {
             >
               <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
-          </CalendlyButton>
+          </a>
           <CalendlyButton className="inline-flex items-center gap-2 px-8 py-4 border border-white/20 text-white font-heading font-bold text-sm uppercase tracking-widest rounded-sm hover:border-white/50 hover:bg-white/5 transition-all duration-200 cursor-pointer">
             Book a Demo
           </CalendlyButton>
