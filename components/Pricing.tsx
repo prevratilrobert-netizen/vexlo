@@ -15,6 +15,7 @@ const tiers = [
       "Missed Call Text-Back",
       "AI-Powered Review Responses",
       "Database Reactivation Launch (one-time)",
+      "Mobile app to manage leads, track bookings, and see your reviews all in one place",
     ],
     cta: "Get Started",
     highlight: false,
@@ -30,6 +31,7 @@ const tiers = [
       "5-Star Filter Funnel",
       "Auto Review-to-Post Engine",
       "Client Win-Back Sequences",
+      "Mobile app to manage leads, track bookings, and see your reviews all in one place",
     ],
     cta: "Most Popular - Start Now",
     highlight: true,
@@ -43,6 +45,7 @@ const tiers = [
     features: [
       "Everything in Growth, plus:",
       "Local Visibility Domination System",
+      "Mobile app to manage leads, track bookings, and see your reviews all in one place",
     ],
     cta: "Go Pro",
     highlight: false,

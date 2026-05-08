@@ -6,27 +6,27 @@ import CalendlyButton from "./CalendlyButton";
 const steps = [
   {
     number: "01",
-    title: "Connect Your Domain & Import Clients",
-    desc: "Point your domain, upload your existing client list, and link your calendar. Takes 10 minutes. No tech skills needed.",
-    detail: "CSV import • Domain connection • Calendar sync",
+    title: "Sign Up & Fill Out the Onboarding Form",
+    desc: "You pay, we send you a short onboarding form. Share your past client database and a few details about your clinic. That's all we need from you to get started.",
+    detail: "Short form • Client database • Done in minutes",
   },
   {
     number: "02",
-    title: "VEXLO Builds Your Professional Website & Booking System",
-    desc: "We deploy your 15-20 page SEO website with an integrated booking system, live chat widget, and online payment processing.",
-    detail: "Live in 48 hours • SEO optimized • Mobile-first",
+    title: "We Build Everything for You",
+    desc: "Over the next 10-14 days, we handle your entire setup. Website, automations, phone number, review system, all of it. We check in regularly so you always know where things stand.",
+    detail: "10-14 day build • Regular check-ins • 100% done for you",
   },
   {
     number: "03",
-    title: "Automation Takes Over",
-    desc: "Review funnels, missed-call SMS, remarketing campaigns, AI responses, and social posting all kick in automatically.",
-    detail: "Zero manual work • 24/7 active • Self-optimizing",
+    title: "Download the LeadConnector App",
+    desc: "Your mobile command center. Manage leads, track bookings, respond to messages, and monitor your reviews all in one place, right from your phone.",
+    detail: "iOS & Android • Real-time notifications • Everything in one app",
   },
   {
     number: "04",
-    title: "Focus on Your Art While Revenue Runs in the Background",
-    desc: "Watch your inbox fill with bookings, your Google rating climb, and past clients return. Without lifting a finger.",
-    detail: "Real-time dashboard • Monthly reports • You stay in control",
+    title: "We Walk You Through the Finished System",
+    desc: "We show you everything we built, explain why we did it, and make sure you understand how the system works. Then we hand you the keys and you're ready to run.",
+    detail: "Live walkthrough • Full education • You're in control",
   },
 ];
 
@@ -66,12 +66,12 @@ export default function HowItWorks() {
             className="animate-on-scroll font-heading font-black text-white leading-none tracking-tighter mb-6"
             style={{ fontSize: "clamp(2.5rem, 5vw, 4.5rem)" }}
           >
-            Plug &amp; Play
+            Done For You.
             <br />
-            <span className="text-white/40">in Minutes.</span>
+            <span className="text-white/40">Start to Finish.</span>
           </h2>
           <p className="animate-on-scroll text-lg text-white/50 leading-relaxed">
-            No onboarding calls that last weeks. No complex setup. VEXLO is live before your next appointment.
+            You fill out a form and download an app. We handle everything else. Your clinic is fully operational in 10-14 days.
           </p>
         </div>
 
@@ -126,7 +126,7 @@ export default function HowItWorks() {
         {/* CTA */}
         <div className="animate-on-scroll text-center mt-20">
           <CalendlyButton className="inline-flex items-center gap-2 px-8 py-4 bg-[#CCFF00] text-black font-heading font-black text-sm uppercase tracking-widest rounded-sm hover:bg-[#BFFF00] transition-all duration-200 cursor-pointer shadow-[0_0_30px_rgba(204,255,0,0.2)] hover:shadow-[0_0_50px_rgba(204,255,0,0.4)]">
-            Start in 10 Minutes
+            Get Started Today
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
