@@ -38,7 +38,7 @@ const testimonials = [
   },
   {
     quote:
-      "I was skeptical because I'd tried other 'all-in-one' platforms and they were a nightmare. VEXLO was live in 48 hours. The website looks genuinely professional, clients comment on it. And my no-show rate dropped from 22% to under 5%.",
+      "I was skeptical because I'd tried other 'all-in-one' platforms and they were a nightmare. VEXLO was live in 10 days. The website looks genuinely professional, clients comment on it. And my no-show rate dropped from 22% to under 5%.",
     name: "Tasha Williams",
     role: "PMU Artist & Educator",
     clinic: "Ink by Tasha, Atlanta, GA",
