@@ -7,13 +7,13 @@ const steps = [
   {
     number: "01",
     title: "Connect Your Domain & Import Clients",
-    desc: "Point your domain, upload your existing client list, and link your calendar. Takes 10 minutes — no tech skills needed.",
+    desc: "Point your domain, upload your existing client list, and link your calendar. Takes 10 minutes. No tech skills needed.",
     detail: "CSV import • Domain connection • Calendar sync",
   },
   {
     number: "02",
     title: "VEXLO Builds Your Professional Website & Booking System",
-    desc: "We deploy your 15–20 page SEO website with an integrated booking system, live chat widget, and online payment processing.",
+    desc: "We deploy your 15-20 page SEO website with an integrated booking system, live chat widget, and online payment processing.",
     detail: "Live in 48 hours • SEO optimized • Mobile-first",
   },
   {
@@ -25,7 +25,7 @@ const steps = [
   {
     number: "04",
     title: "Focus on Your Art While Revenue Runs in the Background",
-    desc: "Watch your inbox fill with bookings, your Google rating climb, and past clients return — without lifting a finger.",
+    desc: "Watch your inbox fill with bookings, your Google rating climb, and past clients return. Without lifting a finger.",
     detail: "Real-time dashboard • Monthly reports • You stay in control",
   },
 ];

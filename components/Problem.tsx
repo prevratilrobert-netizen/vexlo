@@ -11,7 +11,7 @@ const pains = [
     ),
     pain: "Missed Calls & No-Shows",
     detail:
-      "Every unanswered call is a lost booking. No-shows with no follow-up mean empty chairs and wasted prep time — money evaporating silently.",
+      "Every unanswered call is a lost booking. No-shows with no follow-up mean empty chairs and wasted prep time. Money evaporating silently.",
     cost: "~$250 lost per no-show",
   },
   {
@@ -33,7 +33,7 @@ const pains = [
     ),
     pain: "Drowning in Review Management",
     detail:
-      "Manually asking for reviews, responding to each one, monitoring multiple platforms — it's a part-time job that eats hours you don't have.",
+      "Manually asking for reviews, responding to each one, monitoring multiple platforms. It's a part-time job that eats hours you don't have.",
     cost: "5+ hours/week wasted",
   },
   {
@@ -45,7 +45,7 @@ const pains = [
     pain: "Thin Margins & Operational Drag",
     detail:
       "Juggling separate tools for booking, texting, reviews, and marketing burns money on subscriptions and burns time on context-switching.",
-    cost: "$300–600/mo on fragmented tools",
+    cost: "$300-600/mo on fragmented tools",
   },
 ];
 
@@ -93,7 +93,7 @@ export default function Problem() {
             <span className="text-white/40">Money on the Table.</span>
           </h2>
           <p className="animate-on-scroll text-lg text-white/50 leading-relaxed">
-            You're exceptional at your craft. But running the business side — that's where clinics
+            You're exceptional at your craft. But running the business side? That's where clinics
             bleed revenue every single day.
           </p>
         </div>

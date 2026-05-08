@@ -31,7 +31,7 @@ const tiers = [
       "Auto Review-to-Post Engine",
       "Client Win-Back Sequences",
     ],
-    cta: "Most Popular — Start Now",
+    cta: "Most Popular - Start Now",
     highlight: true,
     badge: "Most Popular",
   },
@@ -202,7 +202,7 @@ export default function Pricing() {
           {[
             { stat: "1 no-show recovered", result: "= 1 month paid" },
             { stat: "1 past client returns", result: "= 2+ months paid" },
-            { stat: "5 extra bookings/mo", result: "= 10–15× ROI" },
+            { stat: "5 extra bookings/mo", result: "= 10-15x ROI" },
           ].map((item) => (
             <div key={item.stat} className="p-5 rounded-sm border border-white/6 bg-white/2 text-center">
               <div className="font-heading font-bold text-white text-sm mb-1">{item.stat}</div>

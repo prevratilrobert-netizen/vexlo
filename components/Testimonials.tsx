@@ -5,10 +5,10 @@ import { useEffect, useRef } from "react";
 const testimonials = [
   {
     quote:
-      "I was losing probably 8–10 calls a week that went to voicemail. With VEXLO's auto-text, every single one of those now gets an instant reply with my booking link. My calendar went from 60% to 95% booked in the first month.",
+      "I was losing probably 8-10 calls a week that went to voicemail. With VEXLO's auto-text, every single one of those now gets an instant reply with my booking link. My calendar went from 60% to 95% booked in the first month.",
     name: "Kayla Morrison",
     role: "PMU Artist & Owner",
-    clinic: "KM Brows Studio — Austin, TX",
+    clinic: "KM Brows Studio, Austin, TX",
     stars: 5,
     result: "+35% bookings in 30 days",
     initials: "KM",
@@ -19,7 +19,7 @@ const testimonials = [
       "The DBR campaign alone paid for 6 months of VEXLO. We had 400+ past clients just sitting in our database doing nothing. Within 3 weeks of sending review requests, we went from 47 Google reviews to 112. It's insane.",
     name: "Priya Sharma",
     role: "Brow & Lip Artist",
-    clinic: "Luxe Ink Studio — Chicago, IL",
+    clinic: "Luxe Ink Studio, Chicago, IL",
     stars: 5,
     result: "65 new Google reviews in 3 weeks",
     initials: "PS",
@@ -30,7 +30,7 @@ const testimonials = [
       "I used to spend Sunday evenings replying to reviews and chasing rebookings. VEXLO completely eliminated that. The AI responses sound more professional than what I was writing myself, and past clients just... come back on their own now.",
     name: "Megan Delacroix",
     role: "Microblading Specialist",
-    clinic: "The Brow Bar — Miami, FL",
+    clinic: "The Brow Bar, Miami, FL",
     stars: 5,
     result: "5 hrs/week saved on admin",
     initials: "MD",
@@ -38,10 +38,10 @@ const testimonials = [
   },
   {
     quote:
-      "I was skeptical because I'd tried other 'all-in-one' platforms and they were a nightmare. VEXLO was live in 48 hours. The website looks genuinely professional — clients comment on it. And my no-show rate dropped from 22% to under 5%.",
+      "I was skeptical because I'd tried other 'all-in-one' platforms and they were a nightmare. VEXLO was live in 48 hours. The website looks genuinely professional, clients comment on it. And my no-show rate dropped from 22% to under 5%.",
     name: "Tasha Williams",
     role: "PMU Artist & Educator",
-    clinic: "Ink by Tasha — Atlanta, GA",
+    clinic: "Ink by Tasha, Atlanta, GA",
     stars: 5,
     result: "No-show rate: 22% → 4.8%",
     initials: "TW",
@@ -100,7 +100,7 @@ export default function Testimonials() {
             </span>
           </h2>
           <p className="animate-on-scroll text-lg text-white/50">
-            Don't take our word for it — here's what's happening in real clinics.
+            Don't take our word for it. Here's what's happening in real clinics.
           </p>
         </div>
 
