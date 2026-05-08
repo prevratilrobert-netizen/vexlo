@@ -119,27 +119,27 @@ export default function Pricing() {
         </div>
 
         {/* Pricing cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 items-center">
           {tiers.map((tier, i) => (
             <div
               key={tier.name}
               className={`animate-on-scroll relative flex flex-col rounded-sm transition-all duration-300 ${
                 tier.highlight
-                  ? "border-2 border-[#CCFF00]/60 bg-[#111111] shadow-[0_0_60px_rgba(204,255,0,0.1)]"
+                  ? "border-2 border-[#CCFF00]/60 bg-[#141414] shadow-[0_0_80px_rgba(204,255,0,0.15)] scale-105 z-10"
                   : "border border-white/8 bg-[#111111] hover:border-white/20"
               }`}
               style={{ transitionDelay: `${i * 100}ms` }}
             >
               {/* Popular badge */}
               {tier.badge && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                <div className="absolute -top-5 left-1/2 -translate-x-1/2">
                   <div className="px-5 py-1.5 bg-[#CCFF00] text-black text-xs font-heading font-black uppercase tracking-widest rounded-full shadow-[0_0_20px_rgba(204,255,0,0.5)]">
                     {tier.badge}
                   </div>
                 </div>
               )}
 
-              <div className="p-8 flex flex-col flex-1">
+              <div className={`flex flex-col flex-1 ${tier.highlight ? "p-10" : "p-8"}`}>
                 {/* Tier name */}
                 <div className="mb-6">
                   <span className={`text-xs font-medium tracking-widest uppercase ${tier.highlight ? "text-[#CCFF00]" : "text-white/40"}`}>
