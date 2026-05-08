@@ -138,27 +138,6 @@ export default function Hero() {
           <span>Pays for itself after one recovered no-show.</span>
         </div>
 
-        {/* Stats bar */}
-        <div
-          className="animate-on-scroll mt-20 grid grid-cols-3 divide-x divide-white/10 border border-white/10 rounded-sm bg-white/2"
-          style={{ transitionDelay: "500ms" }}
-        >
-          {[
-            { value: "500+", label: "PMU Clinics Running" },
-            { value: "3.2×", label: "Average Revenue Increase" },
-            { value: "98%", label: "Client Retention Rate" },
-          ].map((stat) => (
-            <div key={stat.label} className="py-6 px-4">
-              <div
-                className="text-2xl md:text-3xl font-heading font-black text-[#CCFF00] mb-1"
-                style={{ textShadow: "0 0 20px rgba(204,255,0,0.4)" }}
-              >
-                {stat.value}
-              </div>
-              <div className="text-xs text-white/40 tracking-wide">{stat.label}</div>
-            </div>
-          ))}
-        </div>
       </div>
 
       {/* Bottom gradient fade */}
