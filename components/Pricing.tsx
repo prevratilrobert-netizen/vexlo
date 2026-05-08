@@ -215,7 +215,7 @@ export default function Pricing() {
         </div>
 
         <p className="animate-on-scroll text-center text-white/25 text-xs mt-6">
-          No contracts. Cancel anytime. 14-day money-back guarantee.
+          No contracts. Cancel anytime. 30-day money-back guarantee.
         </p>
       </div>
     </section>

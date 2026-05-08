@@ -111,8 +111,7 @@ export default function FinalCTA() {
           <div className="animate-on-scroll flex flex-wrap items-center justify-center gap-6 text-white/30 text-xs">
             {[
               "No contracts",
-              "14-day money-back guarantee",
-              "Live in 48 hours",
+              "30-day money-back guarantee",
               "Cancel anytime",
             ].map((item, i) => (
               <div key={item} className="flex items-center gap-2">

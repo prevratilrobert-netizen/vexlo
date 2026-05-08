@@ -159,24 +159,6 @@ export default function Testimonials() {
           ))}
         </div>
 
-        {/* Trust bar */}
-        <div className="animate-on-scroll mt-16 flex flex-col sm:flex-row items-center justify-center gap-8 text-center">
-          {[
-            { value: "4.9/5", label: "Average rating from clinics" },
-            { value: "500+", label: "Active clinics on VEXLO" },
-            { value: "$2.1M+", label: "Revenue recovered for clients" },
-          ].map((stat) => (
-            <div key={stat.label} className="flex flex-col items-center gap-1">
-              <span
-                className="font-heading font-black text-2xl text-[#CCFF00]"
-                style={{ textShadow: "0 0 15px rgba(204,255,0,0.3)" }}
-              >
-                {stat.value}
-              </span>
-              <span className="text-white/35 text-xs tracking-wide">{stat.label}</span>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );
