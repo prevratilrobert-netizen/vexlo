@@ -119,30 +119,30 @@ export default function Pricing() {
         </div>
 
         {/* Pricing cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 items-center">
           {tiers.map((tier, i) => (
             <div
               key={tier.name}
               className={`animate-on-scroll relative flex flex-col rounded-sm transition-all duration-300 ${
                 tier.highlight
-                  ? "border-2 border-[#CCFF00]/60 bg-[#141414] shadow-[0_0_80px_rgba(204,255,0,0.15)] scale-105 z-10"
-                  : "border border-white/8 bg-[#111111] hover:border-white/20"
+                  ? "border-2 border-[#CCFF00]/60 bg-[#141414] shadow-[0_0_100px_rgba(204,255,0,0.18)] z-10 lg:-mx-2"
+                  : "border border-white/8 bg-[#0E0E0E] hover:border-white/20 opacity-80"
               }`}
               style={{ transitionDelay: `${i * 100}ms` }}
             >
               {/* Popular badge */}
               {tier.badge && (
-                <div className="absolute -top-5 left-1/2 -translate-x-1/2">
+                <div className="absolute -top-5 left-1/2 -translate-x-1/2 whitespace-nowrap">
                   <div className="px-5 py-1.5 bg-[#CCFF00] text-black text-xs font-heading font-black uppercase tracking-widest rounded-full shadow-[0_0_20px_rgba(204,255,0,0.5)]">
                     {tier.badge}
                   </div>
                 </div>
               )}
 
-              <div className={`flex flex-col flex-1 ${tier.highlight ? "p-10" : "p-8"}`}>
+              <div className={`flex flex-col flex-1 ${tier.highlight ? "p-12" : "p-7"}`}>
                 {/* Tier name */}
-                <div className="mb-6">
-                  <span className={`text-xs font-medium tracking-widest uppercase ${tier.highlight ? "text-[#CCFF00]" : "text-white/40"}`}>
+                <div className="mb-5">
+                  <span className={`font-medium tracking-widest uppercase ${tier.highlight ? "text-[#CCFF00] text-sm" : "text-white/40 text-xs"}`}>
                     {tier.name}
                   </span>
                 </div>
@@ -151,30 +151,30 @@ export default function Pricing() {
                 <div className="flex items-end gap-1 mb-2">
                   <span
                     className="font-heading font-black text-white leading-none"
-                    style={{ fontSize: "clamp(3rem, 5vw, 4rem)" }}
+                    style={{ fontSize: tier.highlight ? "clamp(3.5rem, 6vw, 5rem)" : "clamp(2.5rem, 4vw, 3.2rem)" }}
                   >
                     {tier.price}
                   </span>
-                  <span className="text-white/40 text-lg mb-1">{tier.period}</span>
+                  <span className={`text-white/40 mb-1 ${tier.highlight ? "text-xl" : "text-base"}`}>{tier.period}</span>
                 </div>
-                <p className="text-white/40 text-sm mb-8">{tier.tagline}</p>
+                <p className={`text-white/40 mb-8 ${tier.highlight ? "text-base" : "text-sm"}`}>{tier.tagline}</p>
 
                 {/* Divider */}
                 <div className={`h-px mb-8 ${tier.highlight ? "bg-[#CCFF00]/20" : "bg-white/8"}`} />
 
                 {/* Features */}
-                <ul className="space-y-3 flex-1 mb-8">
+                <ul className={`flex-1 mb-8 ${tier.highlight ? "space-y-4" : "space-y-3"}`}>
                   {tier.features.map((feature) => (
                     <li key={feature} className="flex items-start gap-3">
                       <span className={tier.highlight ? "text-[#CCFF00]" : "text-white/30"}>
                         <CheckIcon />
                       </span>
                       <span
-                        className={`text-sm leading-snug ${
+                        className={`leading-snug ${
                           feature.includes("Everything in")
                             ? "text-white/60 font-medium"
                             : "text-white/55"
-                        }`}
+                        } ${tier.highlight ? "text-sm" : "text-xs"}`}
                       >
                         {feature}
                       </span>
@@ -184,10 +184,10 @@ export default function Pricing() {
 
                 {/* CTA */}
                 <CalendlyButton
-                  className={`w-full py-3.5 text-center font-heading font-bold text-sm uppercase tracking-widest rounded-sm transition-all duration-200 cursor-pointer ${
+                  className={`w-full text-center font-heading font-bold uppercase tracking-widest rounded-sm transition-all duration-200 cursor-pointer ${
                     tier.highlight
-                      ? "bg-[#CCFF00] text-black hover:bg-[#BFFF00] shadow-[0_0_20px_rgba(204,255,0,0.3)] hover:shadow-[0_0_40px_rgba(204,255,0,0.5)]"
-                      : "border border-white/15 text-white hover:border-white/30 hover:bg-white/5"
+                      ? "py-4 text-sm bg-[#CCFF00] text-black hover:bg-[#BFFF00] shadow-[0_0_20px_rgba(204,255,0,0.3)] hover:shadow-[0_0_40px_rgba(204,255,0,0.5)]"
+                      : "py-3 text-xs border border-white/15 text-white hover:border-white/30 hover:bg-white/5"
                   }`}
                 >
                   {tier.cta}
