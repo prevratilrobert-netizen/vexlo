@@ -36,7 +36,7 @@ export default function Navbar() {
           {/* Logo */}
           <a href="#home" className="flex items-center cursor-pointer">
             <Image
-              src="/logo.png"
+              src="/logo.webp"
               alt="VEXLO"
               width={120}
               height={40}

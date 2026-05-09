@@ -136,7 +136,7 @@ export default function FinalCTA() {
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             {/* Logo */}
-            <Image src="/logo.png" alt="VEXLO" width={90} height={30} className="object-contain" />
+            <Image src="/logo.webp" alt="VEXLO" width={90} height={30} className="object-contain" />
 
             {/* Links */}
             <div className="flex items-center gap-6 text-white/30 text-xs">
