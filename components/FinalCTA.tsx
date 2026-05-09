@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import CalendlyButton from "./CalendlyButton";
+import Image from "next/image";
 
 export default function FinalCTA() {
   const ref = useRef<HTMLDivElement>(null);
@@ -135,11 +136,7 @@ export default function FinalCTA() {
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             {/* Logo */}
-            <div className="flex items-center gap-0">
-              <span className="text-xl font-heading font-black tracking-tighter text-white" style={{ letterSpacing: "-0.03em" }}>VE</span>
-              <span className="text-xl font-heading font-black tracking-tighter text-[#CCFF00]" style={{ letterSpacing: "-0.03em" }}>X</span>
-              <span className="text-xl font-heading font-black tracking-tighter text-white" style={{ letterSpacing: "-0.03em" }}>LO</span>
-            </div>
+            <Image src="/logo.png" alt="VEXLO" width={90} height={30} className="object-contain" />
 
             {/* Links */}
             <div className="flex items-center gap-6 text-white/30 text-xs">

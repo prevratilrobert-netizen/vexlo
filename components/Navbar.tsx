@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import CalendlyButton from "./CalendlyButton";
+import Image from "next/image";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -33,25 +34,15 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-0 cursor-pointer">
-            <span
-              className="text-2xl font-heading font-black tracking-tighter text-white"
-              style={{ letterSpacing: "-0.03em" }}
-            >
-              VE
-            </span>
-            <span
-              className="text-2xl font-heading font-black tracking-tighter"
-              style={{ color: "#CCFF00", letterSpacing: "-0.03em" }}
-            >
-              X
-            </span>
-            <span
-              className="text-2xl font-heading font-black tracking-tighter text-white"
-              style={{ letterSpacing: "-0.03em" }}
-            >
-              LO
-            </span>
+          <a href="#home" className="flex items-center cursor-pointer">
+            <Image
+              src="/logo.png"
+              alt="VEXLO"
+              width={120}
+              height={40}
+              className="object-contain"
+              priority
+            />
           </a>
 
           {/* Desktop Nav Links */}
