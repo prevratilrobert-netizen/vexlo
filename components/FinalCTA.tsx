@@ -81,7 +81,7 @@ export default function FinalCTA() {
           <p
             className="animate-on-scroll max-w-xl mx-auto text-lg text-white/50 leading-relaxed mb-12"
           >
-            Join 500+ PMU clinics running on autopilot. More bookings, better reputation,
+            More bookings, better reputation,
             zero admin overhead. Starting this week.
           </p>
 
