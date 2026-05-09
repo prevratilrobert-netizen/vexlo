@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import CalendlyButton from "./CalendlyButton";
 
 const tiers = [
   {
@@ -18,6 +17,7 @@ const tiers = [
       "Mobile app to manage leads, track bookings, and see your reviews all in one place",
     ],
     cta: "Get Started",
+    stripeUrl: "https://buy.stripe.com/dRm00j9Jndko6sw1lh0VO00",
     highlight: false,
     badge: null,
   },
@@ -34,6 +34,7 @@ const tiers = [
       "Mobile app to manage leads, track bookings, and see your reviews all in one place",
     ],
     cta: "Most Popular - Start Now",
+    stripeUrl: "https://buy.stripe.com/00weVdbRv8046sw2pl0VO01",
     highlight: true,
     badge: "Most Popular",
   },
@@ -48,6 +49,7 @@ const tiers = [
       "Mobile app to manage leads, track bookings, and see your reviews all in one place",
     ],
     cta: "Go Pro",
+    stripeUrl: "https://buy.stripe.com/7sYcN5cVz1BG18c2pl0VO02",
     highlight: false,
     badge: null,
   },
@@ -186,15 +188,18 @@ export default function Pricing() {
                 </ul>
 
                 {/* CTA */}
-                <CalendlyButton
-                  className={`w-full text-center font-heading font-bold uppercase tracking-widest rounded-sm transition-all duration-200 cursor-pointer ${
+                <a
+                  href={tier.stripeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`w-full text-center font-heading font-bold uppercase tracking-widest rounded-sm transition-all duration-200 cursor-pointer block ${
                     tier.highlight
                       ? "py-4 text-sm bg-[#CCFF00] text-black hover:bg-[#BFFF00] shadow-[0_0_20px_rgba(204,255,0,0.3)] hover:shadow-[0_0_40px_rgba(204,255,0,0.5)]"
                       : "py-3 text-xs border border-white/15 text-white hover:border-white/30 hover:bg-white/5"
                   }`}
                 >
                   {tier.cta}
-                </CalendlyButton>
+                </a>
               </div>
             </div>
           ))}
