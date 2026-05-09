@@ -7,9 +7,9 @@ import CalendlyButton from "./CalendlyButton";
 const navLinks = [
   { label: "Home", href: "#home" },
   { label: "Features", href: "#features" },
+  { label: "How It Works", href: "#how-it-works" },
   { label: "Pricing", href: "#pricing" },
-  { label: "Blog", href: "#blog" },
-  { label: "About", href: "#about" },
+  { label: "Testimonials", href: "#testimonials" },
 ];
 
 export default function Navbar() {
