@@ -40,7 +40,7 @@ const tiers = [
   },
   {
     name: "Pro",
-    price: "$497",
+    price: "$997",
     period: "/month",
     tagline: "Full domination mode",
     features: [
