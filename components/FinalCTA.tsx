@@ -153,7 +153,7 @@ export default function FinalCTA() {
 
             {/* Copyright */}
             <div className="text-white/20 text-xs">
-              © 2025 VEXLO. All rights reserved.
+              © 2026 VEXLO. All rights reserved.
             </div>
           </div>
         </div>
