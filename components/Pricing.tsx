@@ -5,14 +5,13 @@ import { useEffect, useRef } from "react";
 const tiers = [
   {
     name: "Core",
-    price: "$197",
+    price: "$97",
     period: "/month",
     tagline: "Everything you need to get started",
     features: [
       "Website hosting & maintenance",
       "Dedicated business phone number",
       "Missed Call Text-Back",
-      "AI-Powered Review Responses",
       "Database Reactivation Launch (one-time)",
       "Mobile app to manage leads, track bookings, and see your reviews all in one place",
     ],
@@ -29,7 +28,6 @@ const tiers = [
     features: [
       "Everything in Core, plus:",
       "5-Star Filter Funnel",
-      "Auto Review-to-Post Engine",
       "Client Win-Back Sequences",
       "Mobile app to manage leads, track bookings, and see your reviews all in one place",
     ],
