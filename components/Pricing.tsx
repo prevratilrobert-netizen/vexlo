@@ -206,9 +206,9 @@ export default function Pricing() {
         {/* ROI callout */}
         <div className="animate-on-scroll mt-12 grid grid-cols-1 md:grid-cols-3 gap-4">
           {[
-            { stat: "1 no-show recovered", result: "= 1 month paid" },
-            { stat: "1 past client returns", result: "= 2+ months paid" },
-            { stat: "5 extra bookings/mo", result: "= 10-15x ROI" },
+            { stat: "1 no-show recovered (~$500 avg)", result: "= 5x your monthly fee back" },
+            { stat: "1 past client reactivated", result: "= $500 on a $97 investment" },
+            { stat: "5 extra bookings/mo", result: "= $2,500+ revenue on $97 spent" },
           ].map((item) => (
             <div key={item.stat} className="p-5 rounded-sm border border-white/6 bg-white/2 text-center">
               <div className="font-heading font-bold text-white text-sm mb-1">{item.stat}</div>
