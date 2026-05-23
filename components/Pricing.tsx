@@ -16,7 +16,7 @@ const tiers = [
       "Mobile app to manage leads, track bookings, and see your reviews all in one place",
     ],
     cta: "Get Started",
-    stripeUrl: "https://buy.stripe.com/dRm00j9Jndko6sw1lh0VO00",
+    stripeUrl: "https://buy.stripe.com/fZu6oHf3H3JO8AE7JF0VO04",
     highlight: false,
     badge: null,
   },
@@ -38,7 +38,7 @@ const tiers = [
   },
   {
     name: "Pro",
-    price: "$997",
+    price: "$497",
     period: "/month",
     tagline: "Full domination mode",
     features: [
